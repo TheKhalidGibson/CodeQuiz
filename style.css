@@ -1,7 +1,20 @@
-#question{
+#quiz{
 
     display: flex;
     justify-content: center;
     align-items: center;
+   
+    
+}
 
+
+#question{
+
+    padding: 2px;
+    
+}
+
+.highscores{
+
+    
 }
