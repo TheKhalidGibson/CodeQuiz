@@ -3,18 +3,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aquamarine;
    
     
+}
+
+body{
+
+    background-color: teal;
+
 }
 
 
 #question{
 
     padding: 2px;
-    
+    align-content: flex-start;
+        
 }
+
+.answers{
+
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+
+
+}
+
+
 
 .highscores{
 
-    
+ font-size: large;
+ align-content: flex-end;
+ 
+ 
+
+}
+
+.highscores2{
+
+ font-size: 50px; 
+ text-align: center;
+
+}
+
+.hidden{
+
+    display: none;
 }

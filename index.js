@@ -2,6 +2,8 @@
 
 let quizDiv = document.querySelector("#quiz");
 let startDiv = document.querySelector("#start");
+let hiddenDiv = document.querySelector("#hidden")
+
 let questionButton1 = document.querySelector("#answer1")
 let questionButton2 = document.querySelector("#answer2")
 let questionButton3 = document.querySelector("#answer3")
@@ -36,6 +38,7 @@ let questions = [{question:"Which pokemon does Ash get at the start of pokemon?"
 
 ]
 
+let question = ["0,1,2,3,4"]
 
 let currentQuestion = 0
 
@@ -69,6 +72,11 @@ quizDiv.addEventListener("click", function(event){
             timer-=5
         }
 
+        else if (event.target.innerText === questions[currentQuestion].correctAnswer) {
+
+            
+        }
+
         // else if (event.target.innerText === questions.length-1){
 
         //         clearInterval()
@@ -88,6 +96,12 @@ quizDiv.addEventListener("click", function(event){
                 clearInterval(timerId)
                 console.log("last question")
             }
+
+            // else if(questions === 6){
+
+            //     setAttribute("hidden", "")
+            // }
+
             renderQuestion();
 
     }
