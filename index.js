@@ -14,10 +14,10 @@ let h1El =document.querySelector("#question")
 // let highScores = JSON.parse(localStorage.getItem("highScores")) || []
 
 let timer = 90
-let h4El = document.querySelector("h4")
+let divEl = document.querySelector("div")
 let timerId = setInterval(function(){
 
-    h4El.textContent = timer
+    divEl.textContent = timer
 
 timer -=1
 console.log(timer);
