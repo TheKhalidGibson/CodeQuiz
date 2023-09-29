@@ -14,7 +14,7 @@
     <a href="highscores.html" id="highscores"> HighScores </a>
     
     
-    <div id="quiz">
+    <div id="quiz" class="quiz hidden">
         <h1 id="question"></h1>
             <div class="answers">
                 <button id="answer1"></button>
@@ -25,7 +25,7 @@
     </div>
 
     <h2>
-    <button id="startbutton">START</button>
+    <button class="startButton">START</button>
     </h2>
 
     <div class="hidden"></div>
@@ -34,6 +34,12 @@
         
     <!-- </div> -->
 
+    <div class="GameOver hidden">
+        GameOver! Check HighScores? Add initials
+
+        <input type="text" class="initials">
+        <button class="submit">submit</button>
+    </div>
 
 
 
